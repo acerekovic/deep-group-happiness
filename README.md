@@ -7,13 +7,13 @@ A. Cerekovic: A deep look into group happiness prediction from images, in Procee
 
 The framework uses Tensorflow models to predict group happiness from images, as follows:
 
-1. Face Detection model, trained with [Tensorbox] (https://github.com/Russell91/TensorBox) [4] 
+1. Face Detection model, trained with [Tensorbox] (https://github.com/Russell91/TensorBox)  
 2. Face Happiness prediction model
 3. Face-CENTRIST model (an LSTM-based model) which predicts group happiness based on spatial distribution of faces in the image, their facial expression of happiness, and CENTRIST image descriptor. The model is trained on the HAPPEI training set.
 
 Details about framework are given in [2]. The only modification to the work from [2] is the Face Happiness prediction model. Hereby we use VGG16, as in later experiments VGG16 slightly outperformed GoogLeNet-FC for the task of individual face happiness prediction. Consequently, new Face-CENTRIST model is trained with data extracted from the VGG16 model. The version at this moment has RMSE 0.54 over the HAPPEI validation set, provided in [1].
 
-All models are released under the [Creative Commons Attribution-NonCommercial License](https://creativecommons.org/licenses/by-nc/4.0/) [5] and are free to use for non-commertial purposes. 
+All models are released under the [Creative Commons Attribution-NonCommercial License](https://creativecommons.org/licenses/by-nc/4.0/) and are free to use for non-commertial purposes. 
 
 If you find the framework/models to be useful in your research work, a citation to the following paper would be appreciated:
 
@@ -61,7 +61,7 @@ imagefilename1, label2
 imagefilename2, label3
 
 
-CENTRIST features have to be precomputed in advance and placed in data/fake_HAPPEI/CENTRIST directory. One can use CENTRIST code from [here](https://github.com/sometimesfood/spact-matlab) [7], in which CENTRIST descriptor (1D array of length 4096) is computed on non-overlapping 4x4 blocks. Note that code has to be modified to meet the criteria of 4096 features.
+CENTRIST features have to be precomputed in advance and placed in data/fake_HAPPEI/CENTRIST directory. One can use CENTRIST code from [here](https://github.com/sometimesfood/spact-matlab), in which CENTRIST descriptor (1D array of length 4096) is computed on non-overlapping 4x4 blocks. Note that code has to be modified to meet the criteria of 4096 features.
 
 Upon initialization, the training process will compute features from given images, which are stored in data/features directory. This is done sequentially:
 
