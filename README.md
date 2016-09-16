@@ -69,7 +69,7 @@ Upon initialization, the training process will compute features from given image
 2) Face happiness intensity. For each detected face (stored in ./data/features/x_bounding_boxes.json) face happiness intensity is computed. This is a 6-dimensional vector of probabilities of each happiness intensity. Computed happiness is stored in ./data/features/x_face_happiness.json.
 c) Features for the Face-CENTRIST model (./data/features/x_face_features.json). These are 10-dimensional vectors for each face, aggregated in n faces per image (details are given in [2]).
 
-Face Detection model and Face Happiness prediction model are provided as is. If one wants to retrain those models, for face detection we would like to point to original framework used for training  [Tensorbox] (https://github.com/Russell91/TensorBox) [4], whereas code to train VGG16 for face happiness intensity can be found here (TO DO, add link). 
+Face Detection model and Face Happiness prediction model are provided as is. If one wants to retrain those models, for face detection we would like to point to original framework used for training  [Tensorbox] (https://github.com/Russell91/TensorBox), whereas code to train VGG16 for face happiness intensity can be found here (TO DO, add link). 
 
 
 References
