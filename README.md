@@ -11,7 +11,7 @@ The framework uses Tensorflow models to predict group happiness from images, as 
 2. Face Happiness prediction model
 3. Face-CENTRIST model (an LSTM-based model) which predicts group happiness based on spatial distribution of faces in the image, their facial expression of happiness, and CENTRIST image descriptor. The model is trained on the HAPPEI training set.
 
-Details about framework are given in [2]. The only modification to the work from [2] is the Face Happiness prediction model. Hereby we use VGG16, as in later experiments VGG16 slightly outperformed GoogLeNet-FC for the task of individual face happiness prediction. Consequently, new Face-CENTRIST model is trained with data extracted from the VGG16 model. The version at this moment has RMSE 0.54 over the HAPPEI validation set.
+Details about framework are given in [2]. The only modification to the work from [2] is the Face Happiness prediction model. Hereby we use VGG16, as in later experiments VGG16 slightly outperformed GoogLeNet-FC for the task of individual face happiness prediction. Consequently, new Face-CENTRIST model is trained with data extracted from the VGG16 model. The version at this moment has RMSE 0.54 over the HAPPEI validation set, provided in [1].
 
 All models are released under the [Creative Commons Attribution-NonCommercial License](https://creativecommons.org/licenses/by-nc/4.0/) [5] and are free to use for non-commertial purposes. 
 
