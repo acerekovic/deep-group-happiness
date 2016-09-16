@@ -69,13 +69,14 @@ Upon initialization, the training process will compute features from given image
 2) Face happiness intensity. For each detected face (stored in ./data/features/x_bounding_boxes.json) face happiness intensity is computed. This is a 6-dimensional vector of probabilities of each happiness intensity. Computed happiness is stored in ./data/features/x_face_happiness.json.
 c) Features for the Face-CENTRIST model (./data/features/x_face_features.json). These are 10-dimensional vectors for each face, aggregated in n faces per image (details are given in [2]).
 
-Face Detection model and Face Happiness prediction model are provided as is. If one wants to retrain those models, for face detection we would like to point to original framework used for training  [Tensorbox] (https://github.com/Russell91/TensorBox), whereas code to train VGG16 for face happiness intensity can be found here (TO DO, add link). 
+Face Detection model and Face Happiness prediction model are provided as is. If one wants to retrain those models, for face detection we would like to point to original framework used for training  [Tensorbox] (https://github.com/Russell91/TensorBox), whereas code to train VGG16 for face happiness intensity can be found [here] (https://github.com/acerekovic/face-happiness-prediction). 
 
 
 References
 ----------
 
   [1]: Abhinav Dhall, Roland Goecke, Jyoti Joshi, Jesse Hoey & Tom Gedeon, EmotiW 2016: Video and Group-level Emotion Recognition Challenges, ACM ICMI 2016. link: https://sites.google.com/site/emotiw2016/challenge-details
+  
   [2]: A. Cerekovic: A deep look into group happiness prediction from images, in Proceedings of the 2016 ACM on International Conference on Multimodal Interaction ICMI'16, preprint
   [3]: http://chenlab.ece.cornell.edu/people/Andy/Andy_files/cvpr09.pdf
   [4]: https://github.com/Russell91/TensorBox
