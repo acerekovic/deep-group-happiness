@@ -1,7 +1,11 @@
-Tensorflow Deep Group Happiness
+Deep Group Happiness
 ===============================
 
-We release Deep Group Happiness framework, presented the paper: A. Cerekovic: A deep look into group happiness prediction from images, in Proceedings of the 2016 ACM on International Conference on Multimodal Interaction ICMI'16, preprint [2]. The framework uses Tensorflow models to predict group happiness from images, as follows:
+We release Deep Group Happiness framework, presented the paper: 
+
+A. Cerekovic: A deep look into group happiness prediction from images, in Proceedings of the 2016 ACM on International Conference on Multimodal Interaction ICMI'16, preprint [2]. 
+
+The framework uses Tensorflow models to predict group happiness from images, as follows:
 
 1. Face Detection model, trained with [Tensorbox] (https://github.com/Russell91/TensorBox) [4] 
 2. Face Happiness prediction model
